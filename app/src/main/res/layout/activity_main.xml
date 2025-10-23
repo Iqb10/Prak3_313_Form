@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iqb.prak3_313.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/blue">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/form_pendaftaran"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/full_name" />
+    <EditText
+        android:id="@+id/isinama"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_full_name"
+        android:padding="10dp"
+        android:background="@drawable/kotakform"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/username" />
+    <EditText
+        android:id="@+id/isiusername"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_username"
+        android:padding="10dp"
+        android:background="@drawable/kotakform"/>
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/age" />
+    <EditText
+        android:id="@+id/isiage"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_age"
+        android:padding="10dp"
+        android:inputType="number"
+        android:background="@drawable/kotakform"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/email" />
+    <EditText
+        android:id="@+id/isiemail"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_email_address"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/kotakform"/>
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/gender" />
+    <RadioGroup
+        android:id="@+id/radiogrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/laki_laki" />
+        <RadioButton
+            android:id="@+id/rdb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_marginStart="20dp"
+            android:text="@string/perempuan" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/password" />
+    <EditText
+        android:id="@+id/isipassword"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_password"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:background="@drawable/kotakform"/>
+
+    <TextView
+        android:id="@+id/confirmpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/confirm_password" />
+    <EditText
+        android:id="@+id/isiconfirmpassword"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="@string/re_enter_your_password"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:background="@drawable/kotakform"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/black"
+        android:text="@string/submit" />
+
+</LinearLayout>
